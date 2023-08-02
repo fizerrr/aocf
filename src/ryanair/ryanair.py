@@ -4,7 +4,7 @@ import json
 # Dane w formacie JSON
 json_data = '''
 {
-  "departureAirportIataCode": "KRA",
+  "departureAirportIataCode": "WAW",
   "outboundDepartureDateFrom": "2023-08-04",
   "market": "en-gb",
   "adultPaxCount": "1",
@@ -14,10 +14,10 @@ json_data = '''
 }
 '''
 
-# Konwersja danych JSON na słownik w Pythonie
+
 data = json.loads(json_data)
 
-# Zmienne dla parametrów URL
+
 departure_airport = data['departureAirportIataCode']
 departure_date_from = data['outboundDepartureDateFrom']
 market = data['market']
@@ -26,7 +26,6 @@ departure_date_to = data['outboundDepartureDateTo']
 departure_time_from = data['outboundDepartureTimeFrom']
 departure_time_to = data['outboundDepartureTimeTo']
 
-# Tworzenie parametrów URL zmiennych
 url_var = (
     f"?departureAirportIataCode={departure_airport}"
     f"&outboundDepartureDateFrom={departure_date_from}"

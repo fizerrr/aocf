@@ -4,7 +4,6 @@ import requests,json
 
 url = "https://be.wizzair.com/18.1.0/Api/asset/farechart"
 
-#cookie = return_cookie(url)
 
 payload = {
     "isRescueFare": False,
@@ -23,7 +22,7 @@ payload = {
 }
 headers = {
     
-    #"cookie": f"{cookie}",
+
     "Host": "be.wizzair.com",
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0",
     "Accept": "application/json, text/plain, */*",
@@ -35,7 +34,6 @@ headers = {
     "Content-Length": "188",
     "Origin": "https://wizzair.com",
     "Connection": "keep-alive",
-    #"Cookie": f"{cookie}",
     "Sec-Fetch-Dest": "empty",
     "Sec-Fetch-Mode": "cors",
     "Sec-Fetch-Site": "same-site",
@@ -50,13 +48,12 @@ response = requests.request("POST", url, json=payload, headers=headers)
 
 
 
-
-
 class FlightData:
     def __init__(self, outbound_flights, return_flights, show_prices):
         self.outbound_flights = outbound_flights
         self.return_flights = return_flights
         self.show_prices = show_prices
+
 
 class Flight:
     def __init__(self, departure_station, arrival_station, price, price_type, date, class_of_service, has_mac_flight):
@@ -68,13 +65,11 @@ class Flight:
         self.class_of_service = class_of_service
         self.has_mac_flight = has_mac_flight
 
-# Parsowanie danych jako obiekt JSON
+
+
 input_data = json.loads(response.text)
 
-# Tworzenie obiektów klasy Flight na podstawie danych wejściowych
 outbound_flights = []
-
-
 for flight_data in input_data["outboundFlights"]:
     flight = Flight(
         departure_station=flight_data["departureStation"],
@@ -87,16 +82,32 @@ for flight_data in input_data["outboundFlights"]:
     )
     outbound_flights.append(flight)
 
-# Tworzenie obiektu klasy FlightData
+return_flights = []
+for flight_data in input_data["returnFlights"]:
+    flight = Flight(
+        departure_station=flight_data["departureStation"],
+        arrival_station=flight_data["arrivalStation"],
+        price=flight_data["price"],
+        price_type=flight_data["priceType"],
+        date=flight_data["date"],
+        class_of_service=flight_data["classOfService"],
+        has_mac_flight=flight_data["hasMacFlight"]
+    )
+    return_flights.append(flight)
+
+# Creating FlightData object
 flight_data_obj = FlightData(
     outbound_flights=outbound_flights,
-    return_flights=input_data["returnFlights"],
+    return_flights=return_flights,
     show_prices=input_data["showPrices"]
 )
 
-# Przykładowe użycie
-print("Liczba lotów wychodzących:", len(flight_data_obj.outbound_flights))
-print("Czy pokazywać ceny:", flight_data_obj.show_prices)
+
+print("Number of outbound flights:", len(flight_data_obj.outbound_flights))
+print("Number of return flights:", len(flight_data_obj.return_flights))
+print("Should show prices:", flight_data_obj.show_prices)
 
 
-
+if flight_data_obj.outbound_flights:
+    first_flight = flight_data_obj.outbound_flights[0]
+    print(f"First outbound flight - From: {first_flight.departure_station}, To: {first_flight.arrival_station}, Price: {first_flight.price}, Date: {first_flight.date}")
