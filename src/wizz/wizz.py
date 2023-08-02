@@ -1,16 +1,16 @@
 import requests,json
-from cookie import return_cookie 
+
 
 
 url = "https://be.wizzair.com/18.1.0/Api/asset/farechart"
 
-cookie = return_cookie(url)
+#cookie = return_cookie(url)
 
 payload = {
     "isRescueFare": False,
     "adultCount": 1,
     "childCount": 0,
-    "dayInterval": 7,
+    "dayInterval": 5,
     "wdc": False,
     "isFlightChange": False,
     "flightList": [
@@ -22,7 +22,8 @@ payload = {
     ]
 }
 headers = {
-    "cookie": f"{cookie}",
+    
+    #"cookie": f"{cookie}",
     "Host": "be.wizzair.com",
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0",
     "Accept": "application/json, text/plain, */*",
@@ -34,7 +35,7 @@ headers = {
     "Content-Length": "188",
     "Origin": "https://wizzair.com",
     "Connection": "keep-alive",
-    "Cookie": f"{cookie}",
+    #"Cookie": f"{cookie}",
     "Sec-Fetch-Dest": "empty",
     "Sec-Fetch-Mode": "cors",
     "Sec-Fetch-Site": "same-site",
@@ -43,11 +44,12 @@ headers = {
     "TE": "trailers"
 }
 
-response = requests.request("POST", url, json=payload, headers=headers)
 
-#print(response.text)
 
 response = requests.request("POST", url, json=payload, headers=headers)
+
+
+
 
 
 class FlightData:
@@ -71,6 +73,8 @@ input_data = json.loads(response.text)
 
 # Tworzenie obiektów klasy Flight na podstawie danych wejściowych
 outbound_flights = []
+
+
 for flight_data in input_data["outboundFlights"]:
     flight = Flight(
         departure_station=flight_data["departureStation"],
@@ -93,4 +97,6 @@ flight_data_obj = FlightData(
 # Przykładowe użycie
 print("Liczba lotów wychodzących:", len(flight_data_obj.outbound_flights))
 print("Czy pokazywać ceny:", flight_data_obj.show_prices)
+
+
 

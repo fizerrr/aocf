@@ -8,4 +8,4 @@ def return_cookie(url):
 
     cookies = driver.get_cookies()
 
-    return cookies[0]['value']
+    return cookies[1]['value']

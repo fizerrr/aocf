@@ -1,0 +1,249 @@
+iataCode,name,shortName,countryCode
+,,Tirana,AL
+,,Yerevan,AM
+,,Salzburg,AT
+,,"Vienna
+",AT
+,,Baku,AZ
+,,"Bahrain
+",BH
+,,Brussels Charleroi,BE
+,,Banja Luka,BA
+,,Sarajevo,BA
+,,Tuzla,BA
+,,Bourgas (Black Sea),BG
+,,Plovdiv,BG
+,,Sofia,BG
+,,Varna (Black Sea),BG
+,,Dubrovnik,HR
+,,Split,HR
+,,Larnaca,CY
+,,Pardubice,CZ
+,,Prague,CZ
+,,"Aarhus
+",DK
+,,Billund,DK
+,,Copenhagen,DK
+,,Alexandria (Borg El Arab),EG
+,,Cairo (Sphinx),EG
+,,Hurghada,EG
+,,"Marsa Alam
+",EG
+,,"Sharm El Sheikh
+",EG
+,,Sohag ,EG
+,,Tallinn,EE
+,,Turku,FI
+,,Basel-Mulhouse-Freiburg,FR
+,,Grenoble,FR
+,,"Lyon
+",FR
+,,Nice,FR
+,,Paris (Any),FR
+,,Paris Beauvais,FR
+,,Paris Orly,FR
+,,Kutaisi,GE
+,,"Berlin Brandenburg
+",DE
+,,Bremen,DE
+,,Cologne,DE
+,,Dortmund,DE
+,,Frankfurt Hahn,DE
+,,Friedrichshafen,DE
+,,Hamburg,DE
+,,Karlsruhe/Baden-Baden,DE
+,,Memmingen/Munich West,DE
+,,Nuremberg ,DE
+,,"Athens
+",GR
+,,Chania (Crete),GR
+,,Corfu,GR
+,,Heraklion (Crete),GR
+,,"Kefalonia
+",GR
+,,Kos,GR
+,,Mykonos,GR
+,,Preveza - Aktion,GR
+,,Rhodes,GR
+,,Santorini,GR
+,,"Skiathos
+",GR
+,,Thessaloniki,GR
+,,Zakynthos,GR
+,,Budapest,HU
+,,Debrecen,HU
+,,Reykjavik,IS
+,,Erbil,IQ
+,,Eilat,IL
+,,Tel-Aviv,IL
+,,Alghero (Sardinia),IT
+,,Ancona,IT
+,,Bari,IT
+,,Bologna,IT
+,,"Brindisi
+",IT
+,,Catania (Sicily),IT
+,,Comiso,IT
+,,Genoa,IT
+,,Lamezia Terme,IT
+,,Lampedusa,IT
+,,Milan (Any),IT
+,,Milan Bergamo,IT
+,,Milan Linate,IT
+,,Milan Malpensa,IT
+,,Naples,IT
+,,Olbia (Sardinia),IT
+,,Palermo,IT
+,,Perugia,IT
+,,Pescara,IT
+,,Pisa (Tuscany),IT
+,,"Rimini
+",IT
+,,Rome (Any),IT
+,,Rome Ciampino,IT
+,,Rome Fiumicino,IT
+,,"Trieste
+",IT
+,,Turin,IT
+,,Venice (Any),IT
+,,Venice Marco Polo,IT
+,,Venice Treviso,IT
+,,Verona,IT
+,,"Amman
+",JO
+,,"Aqaba
+",JO
+,,Almaty ,KZ
+,,"Astana
+",KZ
+,,Prishtina,XK
+,,"Kuwait
+",KW
+,,"Bishkek
+",KG
+,,Riga,LV
+,,Kaunas,LT
+,,Palanga – Klaipeda ,LT
+,,Vilnius,LT
+,,"Luxembourg
+",LU
+,,"Malé (Maldives)
+",MV
+,,Malta,MT
+,,Podgorica,ME
+,,Agadir,MA
+,,Casablanca,MA
+,,"Marrakesh
+",MA
+,,Eindhoven,NL
+,,Ohrid,MK
+,,Skopje,MK
+,,Alesund,NO
+,,Bergen,NO
+,,Haugesund,NO
+,,"Oslo (Any)
+",NO
+,,Oslo Gardermoen,NO
+,,Oslo Sandefjord Torp,NO
+,,Stavanger,NO
+,,"Tromso
+",NO
+,,Trondheim,NO
+,,Muscat,OM
+,,"Salalah
+",OM
+,,"Bydgoszcz
+",PL
+,,Gdansk,PL
+,,Katowice,PL
+,,"Kraków
+",PL
+,,"Lodz
+",PL
+,,Lublin,PL
+,,Olsztyn-Mazury,PL
+,,Poznan,PL
+,,"Rzeszów
+",PL
+,,Szczecin,PL
+,,Warsaw Chopin,PL
+,,Wroclaw,PL
+,,Faro,PT
+,,Funchal (Madeira),PT
+,,Lisbon,PT
+,,Porto,PT
+,,Bacau,RO
+,,Brasov,RO
+,,Bucharest ,RO
+,,Cluj-Napoca,RO
+,,Constanta,RO
+,,Craiova,RO
+,,Iasi,RO
+,,Satu Mare,RO
+,,Sibiu,RO
+,,Suceava,RO
+,,Timisoara,RO
+,,Tirgu Mures,RO
+,,"Krasnodar
+",RU
+,,Moscow,RU
+,,Dammam,SA
+,,"Jeddah
+",SA
+,,"Madinah
+",SA
+,,"Riyadh
+",SA
+,,Belgrade,RS
+,,Niš,RS
+,,Bratislava,SK
+,,Kosice,SK
+,,Poprad-Tatry,SK
+,,Ljubljana,SI
+,,Alicante,ES
+,,Barcelona El Prat,ES
+,,Bilbao,ES
+,,Castellon (Valencia),ES
+,,Fuerteventura (Canary Islands),ES
+,,Ibiza,ES
+,,Madrid,ES
+,,Malaga,ES
+,,Palma de Mallorca,ES
+,,Santander,ES
+,,Seville,ES
+,,Tenerife (Canary Islands),ES
+,,Valencia,ES
+,,Zaragoza,ES
+,,Gothenburg Landvetter,SE
+,,Malmo,SE
+,,Stockholm Skavsta,SE
+,,Vaxjo,SE
+,,Basel-Mulhouse-Freiburg,CH
+,,Geneva,CH
+,,Ankara,TR
+,,Antalya,TR
+,,Dalaman,TR
+,,"Istanbul
+",TR
+,,Kharkiv,UA
+,,Kyiv - Zhulyany,UA
+,,"Kyiv (Any)
+",UA
+,,Lviv,UA
+,,Odesa,UA
+,,Zaporizhzhya,UA
+,,Kyiv – Boryspil,UA
+,,Abu Dhabi,AE
+,,"Dubai 
+",AE
+,,Aberdeen,GB
+,,Birmingham,GB
+,,Bristol,GB
+,,Edinburgh,GB
+,,Leeds,GB
+,,Liverpool,GB
+,,London (Any),GB
+,,London Luton,GB
+,,London Gatwick,GB
+,,Samarkand,UZ
+,,Tashkent,UZ
