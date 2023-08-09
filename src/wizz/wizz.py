@@ -1,22 +1,19 @@
 import requests,json
 
-
-
-url = "https://be.wizzair.com/18.1.0/Api/asset/farechart"
-
+url = "https://be.wizzair.com/18.2.0/Api/asset/farechart"
 
 payload = {
     "isRescueFare": False,
     "adultCount": 1,
     "childCount": 0,
-    "dayInterval": 5,
+    "dayInterval": 7,
     "wdc": False,
     "isFlightChange": False,
     "flightList": [
         {
-            "departureStation": "TIA",
-            "arrivalStation": "VIE",
-            "date": "2023-08-07"
+            "departureStation": "WAW",
+            "arrivalStation": "CRL",
+            "date": "2023-08-20"
         }
     ]
 }
@@ -41,8 +38,6 @@ headers = {
     "Cache-Control": "no-cache",
     "TE": "trailers"
 }
-
-
 
 response = requests.request("POST", url, json=payload, headers=headers)
 
